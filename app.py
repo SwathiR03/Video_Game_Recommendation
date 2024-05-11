@@ -17,7 +17,7 @@ st.title("Game Recommendation System")
 
 # Take input from user
 preferred_genre = st.text_input("Enter your preferred genre:")
-preferred_platform = st.text_input("Enter your preferred platform:")
+preferred_platform = st.text_input("Enter your preferred platform:(GB/GBA/DS/PS/PSX/X360)")
 
 # Filter the dataset based on user input
 df_filtered = df[(df['Genre'] == preferred_genre) & (df['Platform'] == preferred_platform)]
